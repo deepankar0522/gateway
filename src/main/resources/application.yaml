@@ -1,0 +1,26 @@
+server:
+  port: 8087
+spring:
+  application:
+    name: blog-app
+  datasource:
+    password: admin@123
+    url: jdbc:postgresql://localhost:5432/postgres?currentSchema=blogdb
+    username: postgres
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+logging:
+  level:
+    org.springframework: ERROR
+    com.nomad: DEBUG
+  pattern:
+    console: "%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"
+    file: "%d %p %c{1.} [%t] %m%n"
+  file: app.log
+
+
