@@ -1,6 +1,6 @@
 package com.nomad.k8example.gateway.entity;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 

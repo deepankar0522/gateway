@@ -1,12 +1,10 @@
 package com.nomad.k8example.gateway.entity;
 
-import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.ArrayList;
-import java.util.List;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "blog_user")

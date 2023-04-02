@@ -4,7 +4,7 @@ import com.nomad.k8example.gateway.entity.User;
 import com.nomad.k8example.gateway.event.RegistrationCompleteEvent;
 import com.nomad.k8example.gateway.model.UserDto;
 import com.nomad.k8example.gateway.service.UserService;
-import jakarta.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.web.bind.annotation.PostMapping;
